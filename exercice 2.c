@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&b);
     if (a*b>= 0)
        { printf("positif\n");}
-    if (a*b<= 0)
+    else if (a*b<= 0)
        { printf("negatif\n");}
     else 
         {printf("nul\n");}
