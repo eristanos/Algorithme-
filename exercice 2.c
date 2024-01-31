@@ -8,9 +8,9 @@ int main(){
     scanf("%d",&a);
     printf("saisir le 2nd nombre : ");
     scanf("%d",&b);
-    if (a*b>= 0)
+    if (a*b> 0)
        { printf("positif\n");}
-    else if (a*b<= 0)
+    else if (a*b< 0)
        { printf("negatif\n");}
     else 
         {printf("nul\n");}
