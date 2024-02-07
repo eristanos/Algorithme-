@@ -7,6 +7,9 @@ int main() {
 
 	switch (n)
 	{
+	case 0:
+		break;
+		
 	case 1:
 		u = u + 2 * n;
 		break;
@@ -20,6 +23,7 @@ int main() {
 		u = 2 * n * u;
 		break;
 	}
-	printf("U = %d", u);
+	printf("Un = %d", u);
+	return 0;
 
 }
