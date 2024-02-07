@@ -8,7 +8,7 @@ int main()
     int nbr,u;
     nbr = SaisiNbr();
     u = TestDiv(nbr);
-    printf("Le plus grand diviseur est %d",u);
+    printf("Le plus petit diviseur est %d",u);
     
     
 }
