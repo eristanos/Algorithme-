@@ -28,7 +28,7 @@ int main(){
             }
 
         }
-        printf("veut tu rejouer(0 : non, 1 : oui\n)");
+        printf("veut tu rejouer(0 : non, 1 : oui\n");
         scanf("%d", &play);
         
     }
