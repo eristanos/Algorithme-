@@ -8,10 +8,10 @@ int main(){
     while(n != -1){
         printf("saisir note");
         scanf("%f", &n);
-        if (n != -1){
+        if (n != -1)
+        {
             nbr_note++;
             somme = somme + n;
-
         }
     }
     moyenne = somme/nbr_note;
