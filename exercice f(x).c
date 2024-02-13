@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-float fonctionPolynome(float x);
+void fonctionPolynome(float x,float *fx);
 
 int main(){
     float x;
+    float f;
     
     printf("saisissez votre variable");
     scanf("%f", &x);
-    printf("la valeur est %f",fonctionPolynome(x));
+    fonctionPolynome(x,&f);
+    printf("la valeur est %f",f);
 
 }
 
 
-float fonctionPolynome(float x){
+void fonctionPolynome(float x, float *fx){
 
-    return(x*x+x-1);
+    *fx=x*x+x-1;
 }
