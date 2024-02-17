@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+
 int main(){
     int i,j;
     printf("saisir le nombre:");
@@ -11,4 +13,6 @@ int main(){
     return 0;
 
 }
+
+
 
