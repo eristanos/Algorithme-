@@ -15,4 +15,7 @@ void echange (int *a, int *b)
     int stock = *a;
     *a = *b;
     *b = stock;
+    printf("c = %d, d = %d.\n",*a,*b);
 }
+
+
