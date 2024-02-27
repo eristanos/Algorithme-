@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/paulb/OneDrive/Bureau/Estaca/1A/Algo/algo/Algorithme-",
-      "program": "c:/Users/paulb/OneDrive/Bureau/Estaca/1A/Algo/algo/Algorithme-/build/Debug/outDebug",
+      "cwd": "c:/Users/paulb/OneDrive/Bureau/Estaca/1A/Algo/algo/Algorithme-/chapitre sous programme",
+      "program": "c:/Users/paulb/OneDrive/Bureau/Estaca/1A/Algo/algo/Algorithme-/chapitre sous programme/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
