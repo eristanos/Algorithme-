@@ -12,4 +12,9 @@ int main()
         scanf("%d", &n);
         tab[i] = n;
     }
+    for (int i = 0; i < TAILLE; i++)
+    {
+        printf("%d\n", tab[i]);
+    }   
 }
+
