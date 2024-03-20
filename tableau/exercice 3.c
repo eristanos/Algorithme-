@@ -27,7 +27,7 @@ void tab3tri(int tab1[], int tab2[], int tab3[])
     int n2 = 0;
     for (int i =0; i<(TAILLE1+TAILLE2); i++)
     {
-        if (tab1[n1] <= tab2[n2] )
+        if (n2 == TAILLE2 ||(n1 < TAILLE1 && tab1[n1] < tab2[n2]))
         {
             tab3[i] = tab1[n1];
             n1++;
@@ -36,9 +36,10 @@ void tab3tri(int tab1[], int tab2[], int tab3[])
         {
             tab3[i] = tab2[n2];
             n2++;
-
         }
     }
 }
+    
+    
     
     
