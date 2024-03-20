@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define TAILLE1 5
-#define TAILLE2 4
+#define TAILLE2 7
 
 void tab3tri(int tab1[], int tab2[], int tab3[]);
 
@@ -10,7 +10,7 @@ void tab3tri(int tab1[], int tab2[], int tab3[]);
 
 int main() {
     int tab1[TAILLE1] = {1, 3, 5, 7, 9};
-    int tab2[TAILLE2] = {2, 4, 6, 8};
+    int tab2[TAILLE2] = {2, 4, 6, 8,23, 56 , 78};
     int tab3[TAILLE1 + TAILLE2];
     tab3tri(tab1, tab2, tab3);
     for(int i = 0; i<(TAILLE1+TAILLE2); i++)
