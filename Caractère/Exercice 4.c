@@ -10,7 +10,7 @@ void compteur(char chaine[1000000], int count[256]);
 int main() {
     printf("Entrez une chaine de caractères : ");
     char chaine[1000000];
-    int count[256];
+    int count[256] = {0};
     gets(chaine);
     compteur(chaine, count);
 
@@ -30,12 +30,6 @@ int main() {
 
 void compteur(char chaine[1000000], int count[256])
 {
-    
-
-    for(int i = 0; i < 256; i++)
-    {
-        count[i] = 0;
-    }
 
     for(int i = 0; i < strlen(chaine); i++)
     {
