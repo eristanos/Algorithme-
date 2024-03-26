@@ -10,7 +10,7 @@ void compteur(char chaine[1000000], int count[256]);
 int main() {
     printf("Entrez une chaine de caractères : ");
     char chaine[1000000];
-    int count[256] = {0};
+    int count[256] = {0}; // initialise l'ensemble des valeurs du tableau count à 0
     gets(chaine);
     compteur(chaine, count);
 
