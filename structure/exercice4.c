@@ -54,7 +54,7 @@ int main() {
         }
         else
         {
-            etat = 0
+            etat = 0;
         }
     }
     
