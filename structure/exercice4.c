@@ -22,26 +22,23 @@ int main() {
     return 0;
 }
 
-void Saisir_car(S_car tab[], int n)
+void Saisir_Car(S_car tab[], int n)
 {
     for (int i = 0; i < n; i++)
     {
         printf("Saisir la marque de la voiture %d\n", i + 1);
         scanf("%s", tab[i].marque);
-
         printf("Saisir le modele de la voiture %d\n", i + 1);
         scanf("%s", tab[i].modele);
-        
         printf("Saisir l'immatriculation de la voiture %d\n", i + 1);
         scanf("%d", &tab[i].immatriculation);
-
         printf("Saisir l'annee de la voiture %d\n", i + 1);
         scanf("%d", &tab[i].annee);
-
         printf("Saisir le kilometrage de la voiture sur 5 ans%d\n", i + 1);
         scanf("%d", &tab[i].km);
-        
         printf("Saisir la moyenne annuel de kilometrage de la voiture %d\n", i + 1);
         scanf("%f", &tab[i].moyenne_km);
     }
 }
+
+
