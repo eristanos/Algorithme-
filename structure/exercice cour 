@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#define NB_CAR 30
+#define NB_CAR 3
 
 typedef struct car {
     char marque[30];
@@ -17,8 +17,8 @@ void Saisir_Car(S_car tab[], int n);
 
 
 int main() {
-
-
+    S_car tab[NB_CAR];
+    Saisir_Car(tab,3);
     return 0;
 }
 
