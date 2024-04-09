@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define NB_CHAR 20
 #define TAILLE 5
 
@@ -16,24 +17,37 @@ int main()
 
     S_etudiant promo[TAILLE] = {{"Dupont", 2}, {"Durand", 4}, {"Martin", 3}, {"Bernard", 1}, {"Thomas", 5}};
     // tri par selection
-    
-    for(int i = 0; i < TAILLE; i++)
+    int tab[TAILLE] = {-1,4,7,9,-3};
+    int j,i,indiceMin;
+    char min[NB_CHAR];
+    S_etudiant temp;
+
+    for(i = 0; i<TAILLE - 1; i++)
     {
-        for(int j = i+1; j < TAILLE; j++)
+        //recherche min
+        strcpy(min,promo[i].nom);
+        indiceMin = i;
+
+        for(j = i+1; j <TAILLE; j++)
         {
-            if(promo[i].nombre > promo[j].nombre)
+            if(strcmp(min,promo[j].nom) > 0)
             {
-                S_etudiant temp = promo[i];
-                promo[i] = promo[j];
-                promo[j] = temp;
+                strcpy(min,promo[j].nom);
+                indiceMin = j;
             }
         }
+        temp = promo[i];
+        promo[i] = promo[indiceMin];
+        promo[indiceMin] = temp;
+
+    
+
     }
 
     // affichage
-    for(int i = 0; i < TAILLE; i++)
+    for(int i = 0; i < 5; i++)
     {
-        printf("%s %d\n", promo[i].nom, promo[i].nombre);
+        printf("%s \n", promo[i].nom);
     }   
 
     return 0;
