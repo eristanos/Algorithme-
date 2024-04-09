@@ -47,7 +47,7 @@ int main()
     // affichage
     for(int i = 0; i < 5; i++)
     {
-        printf("%s \n", promo[i].nom);
+        printf("%s       %d \n", promo[i].nom, promo[i].nombre);
     }   
 
     return 0;
