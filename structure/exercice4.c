@@ -38,6 +38,7 @@ void Saisir_Car(S_car tab[], int n);
 
 void Saisir_Entretien(S_entretien tab[]);
 
+void SSSaisir_Entretins(S_car *v);
 
 int main() {
     S_car tab[NB_CAR];
